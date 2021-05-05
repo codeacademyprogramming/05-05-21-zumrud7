@@ -1,0 +1,84 @@
+#sidebar {
+  .btn_menu {
+    @include button-border($border-blue, 8px);
+    @include font($ff-02, 24px, 700, $blue-70);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+
+    p {
+      width: calc(100% - 40px);
+      text-align: center;
+    }
+  }
+
+  .category {
+    &__list {
+      @extend %list-style-reset;
+      font-family: $ff-01;
+
+      &--dropdown {
+        @extend %list-style-reset;
+        padding-left: 20px;
+      }
+    }
+    &__item {
+      &.active {
+        padding-bottom: 0;
+
+        .category__link {
+          font-weight: 500;
+
+          i {
+            @include transform(rotate(90deg));
+            color: $blue-70;
+          }
+        }
+      }
+
+      &--links {
+        .category__link {
+          font-weight: 400 !important;
+        }
+      }
+
+      .btn_more {
+        @extend %blue-button;
+      }
+    }
+
+    &__link {
+      @include font($ff-01, 16px, 400, $gray-100);
+      letter-spacing: 0.0275em;
+      display: flex;
+      align-items: center;
+
+      i {
+        color: $blue-40;
+      }
+      small {
+        display: block;
+        color: $gray-50;
+      }
+    }
+  }
+
+  .filter-box {
+    @include filter-box($gray-0, 4px, 10px);
+
+    .label {
+      @include font($ff-01, 16px, 500, $gray-100);
+      letter-spacing: 0.022em;
+    }
+
+    .checkbox{
+        padding: 8px 0;
+
+        label{
+            @include font($ff-01, 16px, 400, $gray-100);
+            cursor: pointer;
+        }
+    }
+  }
+}
