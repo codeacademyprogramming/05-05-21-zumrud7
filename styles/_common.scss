@@ -1,0 +1,32 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+form{
+    margin: 0;
+}
+
+button{
+    background: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: $tr;
+
+    &[disabled]{
+        pointer-events: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    transition: $tr;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
