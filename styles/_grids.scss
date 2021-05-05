@@ -1,0 +1,19 @@
+.container{
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    @include rowMgn(-8px);
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: calc(100% / 12 * #{$i});
+        @include colPad(8px);
+        box-sizing: border-box;
+    }
+}
