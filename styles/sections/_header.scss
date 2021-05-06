@@ -1,0 +1,100 @@
+header {
+    .row{
+        align-items: center;
+    }
+  .menu-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_link {
+    @include font($ff-01, 20px, 500, $gray-60);
+    margin-right: 40px;
+  }
+
+  .form_wrapper{
+      display: flex;
+      align-items: center;
+  }
+
+  .search-form {
+    width: 100%;
+    position: relative;
+
+    input {
+      @include filter-box($gray-5, 100px, 8px 45px);
+      @include boxSize(100%, 48px);
+      @include font($ff-01, 20px, 400, $gray-100);
+      border: none;
+      box-sizing: border-box;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .btn_close,
+    .icon {
+      @include transform(translateY(-50%));
+      position: absolute;
+      top: 50%;
+    }
+    .btn_close {
+      right: 17px;
+      color: $blue-70;
+    }
+
+    .icon {
+      left: 17px;
+    }
+  }
+
+  .link{
+      @include font($ff-01, 20px, 400, $blue-70);
+      white-space: nowrap;
+      margin-left: 30px;
+  }
+
+  .login_wrapper{
+      @extend %list-style-reset;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      li{
+          position: relative;
+          margin-left: 20px;
+      }
+
+      .btn_white{
+          @include font($ff-02, 20px, 400, $blue-70);
+          @include button-border($border-blue, 4px);
+          padding: 8px 12px;
+          display: block;
+
+          &:hover,
+          &.active{
+            @include boxFrame();
+            border-color: transparent;
+          }
+
+          
+      }
+
+      .count{
+        @include transform(translate(2px, -2px));
+        @include boxSize(20px, 20px);
+        @include font($ff-02, 14px, 700, #fff);
+        background: #F44336;
+        color: #fff;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+}

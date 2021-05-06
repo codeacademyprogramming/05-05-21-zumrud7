@@ -1,0 +1,27 @@
+.feature{
+    @include filter-box($gray-5, 8px, 25px 16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+
+    &__icon{
+        @include boxSize(44px, 44px);
+        margin-bottom: 10px;
+
+        img{
+            @include imgSize(100%, 100%, contain);
+        }
+    }
+
+    &__title{
+        @include font($ff-02, 20px, 700, rgba(0, 0, 0, 0.87));
+        text-align: center
+    }
+
+    &__subtitle{
+        @include font ($ff-01, 14px, 400, $gray-60);
+        text-align: center;
+    }
+}

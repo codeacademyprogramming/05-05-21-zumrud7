@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://use.fontawesome.com/f6659beed6.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-3">
+          <div class="menu-logo">
+            <a href="" class="logo">
+              <img src="../assets/icons/Logo.svg" alt="" />
+            </a>
+            <nav>
+              <a href="" class="nav_link">Sell on Shop</a>
+              <a href="" class="nav_link">Register</a>
+            </nav>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form_wrapper">
+            <form action="" class="search-form">
+              <div class="icon">
+                <i class="fa fa-search"></i>
+              </div>
+              <input
+                type="text"
+                placeholder="useless items on white background"
+              />
+              <button class="btn_close">
+                <i class="fa fa-times"></i>
+              </button>
+            </form>
+            <a href="" class="link">Consumer Electronics</a>
+          </div>
+        </div>
+        <div class="col-3">
+            <ul class="login_wrapper">
+                <li>
+                    <a href="" class="btn_white">Sign In</a>
+                </li>
+                <li>
+                    <a href="" class="btn_white active">My Cart</a>
+                    <span class="count">5</span>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="../assets/icons/user.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="index" class="py-24">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <section id="sidebar">
+                <button class="btn_menu p-22 mb-40">
+                  <div class="icon">
+                    <img src="../assets/icons/menu.svg" alt="" />
+                  </div>
+                  <p>Departments</p>
+                </button>
+
+                <ul class="category__list mb-40">
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">
+                        All categories
+                        <small>Ecommerce pattern</small>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10 active">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">Electronics</p>
+                    </a>
+                    <ul class="category__list--dropdown">
+                      <li class="category__item py-10 active">
+                        <a href="" class="category__link pb-10">
+                          <i class="fa fa-angle-right"></i>
+                          <p class="ml-8">Cell Phones & Smartphones</p>
+                        </a>
+                        <ul class="category__list--dropdown">
+                          <li class="category__item--links py-5">
+                            <a href="" class="category__link">
+                              Cell Phone Accessories
+                            </a>
+                          </li>
+                          <li class="category__item--links py-5">
+                            <a href="" class="category__link">
+                              Cell Phone Gatgets
+                            </a>
+                          </li>
+                          <li class="category__item--links py-5">
+                            <a href="" class="category__link"> Applications </a>
+                          </li>
+                          <li class="category__item--links py-5">
+                            <a href="" class="category__link">
+                              Smart Watches
+                            </a>
+                          </li>
+                          <li class="category__item--links py-5">
+                            <button class="btn_more">
+                              Show more
+                              <i class="fa fa-angle-down"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">Business & Industrial</p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">
+                        Computers
+                        <small>Tablets & Networking</small>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">Consumer Electroinics</p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">Home & Garden</p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10">
+                    <a href="" class="category__link">
+                      <i class="fa fa-angle-right"></i>
+                      <p class="ml-8">Collectibles</p>
+                    </a>
+                  </li>
+                  <li class="category__item py-10">
+                    <button class="btn_more ml-15">Expand</button>
+                  </li>
+                </ul>
+
+                <div class="filter-box mb-24">
+                  <h6 class="label mb-14">Expanded Filters</h6>
+                  <div class="filter-checkbox-wrapper">
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-1" />
+                      <label for="opt-1">Recommended</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-2" />
+                      <label for="opt-2">Recently Added</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-3" />
+                      <label for="opt-3">Expiring Soon </label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-4" />
+                      <label for="opt-4">Most Rated</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-5" />
+                      <label for="opt-5">Price: Low → High</label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="opt-6" />
+                      <label for="opt-6">Price: High → Low</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-box">
+                  <h6 class="label mb-14">Year of Manufacturing</h6>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-1" />
+                    <label for="year-1">1954</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-2" />
+                    <label for="year-2">1955</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-3" />
+                    <label for="year-3">1956</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-4" />
+                    <label for="year-4">1957</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-5" />
+                    <label for="year-5">1958</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-6" />
+                    <label for="year-6">1959</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-7" />
+                    <label for="year-7">1960</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-8" />
+                    <label for="year-8">1961</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="year-9" />
+                    <label for="year-9">1962-2020</label>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-9">
+              <section id="product-list" class="mb-40">
+                <div class="filter-section mb-30">
+                  <div class="row">
+                    <div class="col-6 mb-10">
+                      <div class="filter__wrapper">
+                        <button class="filter__btn">
+                          <span class="label">SORT BY</span>
+                          Useless first
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <button class="filter__btn" disabled>
+                          <span class="label">SORT BY</span>
+                          Condition
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <button class="filter__btn" disabled>
+                          <span class="label">SORT BY</span>
+                          Delivery Options
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-6 mb-10">
+                      <div class="view__wrapper">
+                        <div class="view__list">
+                          <button class="view__button">Show All</button>
+                          <button class="view__button active">Auction</button>
+                          <button class="view__button">Buy Now</button>
+                        </div>
+                        <div class="view__type ml-24">
+                          <button class="view__button">
+                            <svg
+                              width="17"
+                              height="14"
+                              viewBox="0 0 17 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5 0V4H17V0H5ZM5 14H17V10H5V14ZM5 9H17V5H5V9ZM0 4H4V0H0V4ZM0 14H4V10H0V14ZM0 9H4V5H0V9Z"
+                                fill="#787885"
+                              />
+                            </svg>
+                          </button>
+                          <button class="view__button active">
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 18 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0 8H8V0H0V8ZM0 18H8V10H0V18ZM10 18H18V10H10V18ZM10 0V8H18V0"
+                                fill="#2979FF"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="tag__section">
+                  <h6 class="tag__title">Related</h6>
+                  <li class="tag">worldwide shipping</li>
+                  <li class="tag">under $50</li>
+                  <li class="tag orange">kitten</li>
+                  <li class="tag blue">plastic plugs</li>
+                  <li class="tag">pucker shoes</li>
+                  <li class="tag">vintage typewriter</li>
+                </ul>
+                <div class="row list_wrapper">
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/1.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Vintage Typewriter to post awesome stories about UI
+                          design and webdev.
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$49.50</h5>
+                        <p class="product-card__desc">
+                          Eligible for Shipping To Mars or somewhere else
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.56</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/2.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Prototyping items to create a lot if useless things...
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$128.99</h5>
+                        <p class="product-card__desc">
+                          Showcasing onHovered state
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/3.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          John Von Ebalkin SPRING
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$13.99</h5>
+                        <p class="product-card__desc">
+                          1258 bids, 359 watchers $5.95 for shipping
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/4.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Envelope, Stripes, Pencil and etc. Purchase this kit
+                          today and feel OKAY
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$9.99</h5>
+                        <p class="product-card__desc">Eligible for S</p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/1.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Vintage Typewriter to post awesome stories about UI
+                          design and webdev.
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$49.50</h5>
+                        <p class="product-card__desc">
+                          Eligible for Shipping To Mars or somewhere else
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.56</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/2.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Prototyping items to create a lot if useless things...
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$128.99</h5>
+                        <p class="product-card__desc">
+                          Showcasing onHovered state
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/3.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          John Von Ebalkin SPRING
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$13.99</h5>
+                        <p class="product-card__desc">
+                          1258 bids, 359 watchers $5.95 for shipping
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/4.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Envelope, Stripes, Pencil and etc. Purchase this kit
+                          today and feel OKAY
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$9.99</h5>
+                        <p class="product-card__desc">Eligible for S</p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/1.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Vintage Typewriter to post awesome stories about UI
+                          design and webdev.
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$49.50</h5>
+                        <p class="product-card__desc">
+                          Eligible for Shipping To Mars or somewhere else
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.56</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/2.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Prototyping items to create a lot if useless things...
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$128.99</h5>
+                        <p class="product-card__desc">
+                          Showcasing onHovered state
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/3.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          John Von Ebalkin SPRING
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$13.99</h5>
+                        <p class="product-card__desc">
+                          1258 bids, 359 watchers $5.95 for shipping
+                        </p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="" class="product-card">
+                      <div class="product-card__top">
+                        <div class="product-card__photo">
+                          <img src="../assets/images/4.png" alt="" />
+                        </div>
+                        <p class="product-card__title">
+                          Envelope, Stripes, Pencil and etc. Purchase this kit
+                          today and feel OKAY
+                        </p>
+                      </div>
+                      <div class="product-card__bottom">
+                        <h5 class="product-card__price">$9.99</h5>
+                        <p class="product-card__desc">Eligible for S</p>
+                        <div class="product-card__footer">
+                          <div class="rating">
+                            <div class="stars">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                            <span>4.87</span>
+                          </div>
+                          <button class="btn_watch">
+                            <i class="fa fa-heart-o"></i>
+                            <p>Watch</p>
+                          </button>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </section>
+              <section id="features">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="feature">
+                      <div class="feature__icon">
+                        <img src="../assets/icons/bulb.svg" alt="" />
+                      </div>
+                      <h5 class="feature__title">Clear & Usable user flows</h5>
+                      <p class="feature__subtitle">
+                        Let’s boost yout marketplace
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="feature">
+                      <div class="feature__icon">
+                        <img src="../assets/icons/pen.svg" alt="" />
+                      </div>
+                      <h5 class="feature__title">Fine & Styled components</h5>
+                      <p class="feature__subtitle">
+                        Speed up with Setproduct templates
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="feature">
+                      <div class="feature__icon">
+                        <img src="../assets/icons/paint.svg" alt="" />
+                      </div>
+                      <h5 class="feature__title">
+                        Speed up with Setproduct templates
+                      </h5>
+                      <p class="feature__subtitle">
+                        Take our UX patterns and rebuild
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+.product-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+
+  &:hover {
+    @include boxFrame();
+    box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2),
+      0px 4px 8px rgba(92, 107, 192, 0.2);
+  }
+
+  &__photo {
+    @include boxSize(100%, 225px);
+
+    img {
+      @include imgSize(100%, 100%, cover);
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title{
+      @include font($ff-01, 16px, 400, $gray-100);
+      margin-bottom: 8px;
+      letter-spacing: 0.0275em;
+  }
+
+  &__price{
+      @include font($ff-01, 24px, 700, rgba(0, 0, 0, 0.87));
+      margin-bottom: 8px;
+  }
+
+  &__desc{
+      @include font ($ff-01, 14px, 400, $gray-50);
+      margin-bottom: 8px;
+  }
+
+  &__footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .btn_watch{
+      @include button-border($border-blue, 4px);
+      @include font($ff-01, 14px, 500, $blue-70);
+      display: flex;
+      align-items: center;
+      padding: 6px 12px;
+
+      i{
+          margin-right: 7px;
+      }
+  }
+
+  .rating{
+      display: flex;
+      align-items: center;
+      .stars{
+          margin-right: 8px;
+          i{
+              color: $orange-60;
+              font-size: 10px;
+          }
+      }
+
+      span{
+          @include font($ff-03, 14px, 500, $gray-80);
+      }
+  }
+}
