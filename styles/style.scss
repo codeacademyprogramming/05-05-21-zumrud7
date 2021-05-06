@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Quicksand:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import "variables";
+@import "mixins";
+@import "grids";
+@import "spacing";
+@import "breakpoints";
+
+
+//DEFAULT
+@import "common";
+
+//COMPONENT
+@import 'component/product-card';
+@import "component/feature";
+
+// SECTIONS
+@import "sections/header";
+@import "sections/sidebar";
+@import "sections/product-list";
